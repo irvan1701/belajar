@@ -122,12 +122,20 @@
                                     </div>
  
                                     	
+                                    @if (session()->has('loginError'))
+                                    <div class="allert allert-danger allert-dismissible fade show" role="alert">
+                                        {{session('loginError')}}
 
-                                    <form action="{{irl('/dashboard')}}" method="post" accept-charset="utf-8">
+                                    </div>
+                                    @endif
+                                        
+            
+                                    <form action="/login" method="post" accept-charset="utf-8">
+                                        @csrf
                                          <div class="form-floating border-left-login form-floating-custom mb-3">
-                                            <input type="text" class="form-control " id="basic_name" name="username"
-                                                placeholder="Enter User Name" required>
-                                            <label for="basic_name">Username</label>
+                                            <input type="email" class="form-control " id="email" name="email"
+                                                placeholder="Masukkan Email" required>
+                                            <label for="basic_name">Email</label>
                                             <div class="form-floating-icon">
                                                 <i data-feather="users"></i>
                                             </div>
@@ -135,7 +143,7 @@
                                         
                                         
                                         <div class="form-floating border-left-login form-floating-custom mb-4 auth-pass-inputgroup">
-                                            <input type="password" class="form-control pe-5" id="basic_password"
+                                            <input type="password" class="form-control pe-5" id="password"
                                                 name="password" placeholder="Enter Password">
 
                                             <button type="button"
