@@ -20,6 +20,11 @@
         #section2 {
             padding: 40px 0;
         }
+        #portal {
+            
+            color: #124173;
+            font-weight: bold;
+        }
         .section2-img {
             width: 100%;
             max-width: 300px;
@@ -58,7 +63,7 @@
   </head>
   <body>
     <section id="section1">
-        <h1 id="text-1">Management APMI</h1>
+        <h1 id="text-1">#MembumikanPenelitian</h1>
     </section>
 
     <section id="section2" class="container">
@@ -80,7 +85,7 @@
     </section>
 
     <section id="section3" class="container">
-        <h2>Portal Manajemen APMI</h2>
+        <h1 id="portal">Portal Manajemen APMI</h1>
         <div class="icon-container">
             <div class="icon-item">
                 <i class="bi bi-person-badge"></i>
@@ -108,6 +113,20 @@
             </div>
         </div>
     </section>
+
+    <section id="section2" class="container">
+        <div class="row align-items-center">
+          <div class="col-md-4">
+            <img src="{{ asset('/assets/images/bg/APMI.png') }}" class="section2-img">
+          </div>
+          <div class="col-md-8">
+            <h2 class="section2-title">Apa itu APMI?</h2>
+            <p class="section2-text">
+                Asosiasi Peneliti Muda Indonesia (APMI) adalah wadah berbentuk komunitas yang menaungi seluruh generasi muda yang memiliki minat dan bakat di bidang penelitian. APMI memiliki tujuan untuk membumikan penelitian di seluruh tanah air melalui berbagai program. Di kepengurusan tahun 2024 ini, APMI memiliki 74 anggota yang berasal dari berbagai daerah di Indonesia.
+            </p>
+          </div>
+        </div>
+      </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
