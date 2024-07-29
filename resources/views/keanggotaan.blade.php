@@ -40,6 +40,11 @@
             padding: 40px 0;
             text-align: center;
         }
+        .section3-title {
+            color: #124173;
+            font-weight: bold;
+            text-align: center;
+        }
         .icon-container {
             display: flex;
             justify-content: center;
@@ -77,8 +82,8 @@
         .footer-text {
             margin-bottom: 0;
         }
-        a {
-            text-decoration: none;
+        .table-container {
+            margin-top: 40px;
         }
     </style>
   </head>
@@ -99,7 +104,7 @@
               <a class="nav-link" href="/tatakelola">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/keanggotaan">Keanggotaan</a>
+              <a class="nav-link" href="#">Keanggotaan</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Kegiatan</a>
@@ -123,7 +128,7 @@
 
     <!-- Sections -->
     <section id="section1">
-        <h1 id="text-1"><strong>#MembumikanPenelitian</strong></h1>
+        <h1 id="text-1"><strong>Manajemen Keanggotaan</strong></h1>
     </section>
 
     <section id="section2" class="container">
@@ -132,76 +137,43 @@
           <img src="{{ asset('/assets/1.png') }}" class="section2-img">
         </div>
         <div class="col-md-8">
-          <h2 class="section2-title"><strong>Apa itu Sistem Tata Kelola?</strong></h2>
+          <h2 class="section2-title"><strong>Member Point</strong></h2>
           <p class="section2-text">
-            Setiap komunitas memerlukan sistem yang baik dalam pelaksanaannya. APMI menerapkan sistem Tata Kelola yang diadaptasi dari prinsip good organization governance (GOG). Adapun lima pilar utama GOG yaitu transparency (transparansi), accountability (akuntabilitas), responsibility (responsibilitas), independence (kebebasan), dan fairness (keadilan).
-            <br>
-            <br>
-            Sistem Tata Kelola ini dipadukan menjadi satu portal manajemen yang mana seluruh anggota APMI diwajibkan untuk menggunakan portal website ini untuk mengakses, menginput data, melihat agenda, dan hal-hal lainnya yang berkaitan. Secara garis besar, portal ini dapat diakses untuk keanggotaan, agenda kegiatan, kemitraan, secretariat, keuangan, dan arsip.
+            Member point merepresentasikan keaktifan anggota APMI pada kegiatan operasional, kemitraan, pelatihan, delegasi dan aktivitas lainnya. Member point diharapkan menjadi nilai ukur yang objektif dalam kinerja dan kontribusi anggota, sehingga dapat menjadi dasar pengambilan keputusan apresiasi ataupun hal lainnya.
           </p>
         </div>
       </div>
     </section>
 
-    <section id="section3" class="container">
-        <h1 id="portal">Portal Manajemen APMI</h1>
-        <div class="icon-container">
-            <a href="/keanggotaan" class="card card-custom text-center">
-                <div class="card-body">
-                    <i class="bi bi-person-badge"></i>
-                    <p class="card-text">Keanggotaan</p>
-                </div>
-            </a>
-            <a href="/kemitraan" class="card card-custom text-center">
-                <div class="card-body">
-                    <i class="bi bi-people"></i>
-                    <p class="card-text">Kemitraan</p>
-                </div>
-            </a>
-            <a href="/agenda" class="card card-custom text-center">
-                <div class="card-body">
-                    <i class="bi bi-calendar-event"></i>
-                    <p class="card-text">Agenda Kegiatan</p>
-                </div>
-            </a>
-            <a href="/sekretariat" class="card card-custom text-center">
-                <div class="card-body">
-                    <i class="bi bi-file-earmark-text"></i>
-                    <p class="card-text">Sekretariat</p>
-                </div>
-            </a>
-            <a href="/keuangan" class="card card-custom text-center">
-                <div class="card-body">
-                    <i class="bi bi-currency-dollar"></i>
-                    <p class="card-text">Keuangan</p>
-                </div>
-            </a>
-            <a href="/arsip" class="card card-custom text-center">
-                <div class="card-body">
-                    <i class="bi bi-folder"></i>
-                    <p class="card-text">Arsip</p>
-                </div>
-            </a>
-        </div>
+    <!-- New Section for Top Members -->
+    <section id="top-members" class="container table-container">
+        <h2 class="section3-title"><strong>10 Anggota dengan Member Point Tertinggi</strong></h2>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Peringkat</th>
+                    <th>Member ID</th>
+                    <th>Nama</th>
+                    <th>Jabatan</th>
+                    <th>Biro</th>
+                    <th>Member Point</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>APMI001</td>
+                    <td>Irvan Nurfauzan Saputra</td>
+                    <td>Manajer of IT</td>
+                    <td>Riset</td>
+                    <td>1200</td>
+                </tr>
+            </tbody>
+        </table>
     </section>
-    
 
-    <section id="section2" class="container">
-        <div class="row align-items-center">
-          <div class="col-md-4">
-            <img src="{{ asset('/assets/images/bg/APMI.png') }}" class="section2-img">
-          </div>
-          <div class="col-md-8">
-            <h2 class="section2-title"><strong>Apa itu APMI?</strong></h2>
-            <p class="section2-text">
-                Asosiasi Peneliti Muda Indonesia (APMI) adalah wadah berbentuk komunitas yang menaungi seluruh generasi muda yang memiliki minat dan bakat di bidang penelitian. APMI memiliki tujuan untuk membumikan penelitian di seluruh tanah air melalui berbagai program. Di kepengurusan tahun 2024 ini, APMI memiliki 74 anggota yang berasal dari berbagai daerah di Indonesia.
-            </p>
-          </div>
-        </div>
-      </section>
-
-    <!-- Footer -->
-    <footer>
+     <!-- Footer -->
+     <footer>
         <div class="container text-center">
             <p class="footer-text">
                 </i>tatakelola.apmi@gmail.com | +62 878 9790 4966 | Kota Tangerang Selatan, Banten 15417
