@@ -6,6 +6,7 @@
     <title>Bootstrap Demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href='https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.css' rel='stylesheet' />
     <style>
         #section1 {
             min-height: 30vh;
@@ -38,11 +39,6 @@
         }
         #section3 {
             padding: 40px 0;
-            text-align: center;
-        }
-        .section3-title {
-            color: #124173;
-            font-weight: bold;
             text-align: center;
         }
         .icon-container {
@@ -82,8 +78,8 @@
         .footer-text {
             margin-bottom: 0;
         }
-        .table-container {
-            margin-top: 40px;
+        a {
+            text-decoration: none;
         }
     </style>
   </head>
@@ -107,19 +103,19 @@
               <a class="nav-link" href="/keanggotaan">Keanggotaan</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/kegiatan">Kegiatan</a>
+              <a class="nav-link" href="/agenda">Kegiatan</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Sekretariat</a>
+              <a class="nav-link" href="/sekretariat">Sekretariat</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Keuangan</a>
+                <a class="nav-link" href="/keuangan">Keuangan</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Arsip</a>
+                <a class="nav-link" href="/arsip">Arsip</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Tentang</a>
+                <a class="nav-link" href="/apmi">Tentang</a>
               </li>
           </ul>
         </div>
@@ -128,7 +124,7 @@
 
     <!-- Sections -->
     <section id="section1">
-        <h1 id="text-1"><strong>Manajemen Keanggotaan</strong></h1>
+        <h1 id="text-1"><strong>MANAJEMEN ACARA</strong></h1>
     </section>
 
     <section id="section2" class="container">
@@ -137,50 +133,49 @@
           <img src="{{ asset('/assets/1.png') }}" class="section2-img">
         </div>
         <div class="col-md-8">
-          <h2 class="section2-title"><strong>Member Point</strong></h2>
+          <h2 class="section2-title"><strong>Agenda Kegiatan APMI</strong></h2>
           <p class="section2-text">
-            Member point merepresentasikan keaktifan anggota APMI pada kegiatan operasional, kemitraan, pelatihan, delegasi dan aktivitas lainnya. Member point diharapkan menjadi nilai ukur yang objektif dalam kinerja dan kontribusi anggota, sehingga dapat menjadi dasar pengambilan keputusan apresiasi ataupun hal lainnya.
+            Setiap komunitas memerlukan sistem yang baik dalam pelaksanaannya. APMI menerapkan sistem Sebagai bentuk transparansi atas kegiatan-kegiatan yang dilakukan oleh APMI, maka seluruh jadwal atau agenda kegiatan disatukan dalam Kalendar Bersama!
           </p>
         </div>
       </div>
     </section>
 
-    <!-- New Section for Top Members -->
-    <section id="top-members" class="container table-container">
-        <h2 class="section3-title"><strong>10 Anggota dengan Member Point Tertinggi</strong></h2>
-        <table class="table table-bordered">
-            <thead>
-                <tr>
-                    <th>Peringkat</th>
-                    <th>Member ID</th>
-                    <th>Nama</th>
-                    <th>Jabatan</th>
-                    <th>Biro</th>
-                    <th>Member Point</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>APMI001</td>
-                    <td>Irvan Nurfauzan Saputra</td>
-                    <td>Manajer of IT</td>
-                    <td>Riset</td>
-                    <td>1200</td>
-                </tr>
-            </tbody>
-        </table>
+    <section id="section3" class="container">
+        <h2 class="section2-title"><strong>Agenda Kegiatan APMI</strong></h2>    
+      <div id='calendar'></div>
     </section>
 
-     <!-- Footer -->
-     <footer>
-      <div class="container text-center">
-          <p class="footer-text">
-              </i>asosiasipenelitimudaindonesia@gmail.com | +62878 9790 4966 | Jakarta
-          </p>
-      </div>
-  </footer>
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p class="footer-text">
+                </i>asosiasipenelitimudaindonesia@gmail.com | +62878 9790 4966 | Jakarta
+            </p>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.js'></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var calendarEl = document.getElementById('calendar');
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          initialView: 'dayGridMonth',
+          events: [
+            {
+              title: 'Event 1',
+              start: '2024-07-29'
+            },
+            {
+              title: 'Event 2',
+              start: '2024-07-30'
+            }
+          ]
+        });
+        calendar.render();
+      });
+    </script>
   </body>
 </html>
+ 

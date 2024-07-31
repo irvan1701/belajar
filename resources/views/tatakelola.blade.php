@@ -102,19 +102,19 @@
               <a class="nav-link" href="/keanggotaan">Keanggotaan</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Kegiatan</a>
+              <a class="nav-link" href="/kegiatan">Kegiatan</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Sekretariat</a>
+              <a class="nav-link" href="/sekretariat">Sekretariat</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Keuangan</a>
+                <a class="nav-link" href="/keuangan">Keuangan</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Arsip</a>
+                <a class="nav-link" href="/arsip">Arsip</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Tentang</a>
+                <a class="nav-link" href="/apmi">Tentang</a>
               </li>
           </ul>
         </div>
@@ -204,7 +204,7 @@
     <footer>
         <div class="container text-center">
             <p class="footer-text">
-                </i>tatakelola.apmi@gmail.com | +62 878 9790 4966 | Kota Tangerang Selatan, Banten 15417
+                </i>asosiasipenelitimudaindonesia@gmail.com | +62878 9790 4966 | Jakarta
             </p>
         </div>
     </footer>
