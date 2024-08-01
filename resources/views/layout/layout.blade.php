@@ -67,7 +67,7 @@
                     </a>
                     <ul class="collapse" id="keuanganSubmenu">
                         <li class="sidebar-item">
-                            <a href="pemasukan.html" class="sidebar-link">
+                            <a href="/pemasukan" class="sidebar-link">
                                 <span>Pemasukan</span>
                             </a>
                         </li>

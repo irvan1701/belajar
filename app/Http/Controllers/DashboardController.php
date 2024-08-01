@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class DashboardController extends Controller
 {
     public function dashboardd(){
-        return view('dashboard');
+        return view('admin.dashboard');
     }
 
     public function logout(Request $request)
