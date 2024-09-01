@@ -140,13 +140,15 @@
           <h2 class="section2-title" style="font-size: 40px"><strong>Formulir Kesekretaritan</strong></h2>
           <p class="section2-text" style="font-size: 30px">
             Bila kamu membutuhkan dokumen/layanan seperti: <br>
-            <strong>Surat Keterangan Anggota Aktif</strong> <br>
-            <strong>Surat Tugas</strong> <br>
-            <strong>Peminjaman Zoom</strong> <br>
+            <ol class="list-group list-group-numbered list-group-flush">
+              <li class="list-group-item border-0 py-0"><strong>Surat Keterangan Anggota Aktif</strong></li>
+              <li class="list-group-item border-0 py-0"><strong>Surat Tugas</strong></li>
+              <li class="list-group-item border-0 py-0"><strong>Peminjaman Zoom</strong></li>
+            </ol>
             Kamu dapat mengisi formulir kesekretaritan untuk mengajukan dokumen/layanan tersebut.
             Setelah mengisi formulis segera hubungi Sekretaris untuk segera ditindaklanjuti!
           </p>
-          <button type="button" id="tombol">Isi Formulir</button>
+          <button type="button" class="btn btn-outline-primary " id="button" style="width: 100%">Isi Formulir</button>
         </div>
       </div>
     </section>
